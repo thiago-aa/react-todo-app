@@ -1,0 +1,155 @@
+html, body {
+  min-height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FF416C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+ .container {
+   width: 400px;
+ }
+
+ .title {
+   margin: 25px;
+   text-align: center;
+   color: #fff;
+ }
+
+ .new-task-box {
+   display: flex;
+   border-top-right-radius: 25px;
+   border-bottom-right-radius: 25px;
+   justify-content: space-between;
+   background-color: #fff;
+   padding: 15px;
+   box-shadow: 1px 2px 5px #222;
+ }
+
+ .new-task-box input {
+   border: none;
+   color: #777;
+   font-size: 26px;
+   font-weight: normal;
+   flex-grow: 1;
+   margin-right: 10px;
+ }
+
+ .new-task-box button {
+   border: none;
+   background-color: #fff;
+   font-size: 22px;
+   font-weight: 600;
+   color: dodgerblue;
+   cursor: pointer;
+   opacity: 1;
+ }
+ .new-task-box button:hover {
+   text-shadow: 0.3px 0.3px #222;
+ }
+ 
+ .error-message {
+   color: white;
+ }
+
+.tasks-box {
+  font-size: 20px;
+  color: #777;
+  margin-top: 25px;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 1px 2px 5px #222;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  border-bottom: 1px solid dodgerblue;
+  padding: 10px;
+}
+
+.task:hover {
+  box-shadow: 1px 1px 2px dodgerblue;
+}
+
+.task input {
+  cursor: pointer;
+}
+
+.task div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tasks-box button {
+  border: none;
+  background-color: transparent;
+  color: #FF4130;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 15px;
+  opacity: 1;
+}
+
+.tasks-box button:hover { 
+  opacity: 0.8;
+}
+
+
+
+#edit-button {
+  color: dodgerblue;
+}
+
+.task-done {
+  color: rgba(255, 0, 0, 0.76);
+  text-decoration: line-through;
+  margin-left: 3px;
+}
+
+.task-not-done {
+  margin-left: 3px;
+}
+
+.clear-button-box {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  padding-right: 5px;
+  background-color: white;
+  
+}
+
+.clear-button-box button{
+  border: none;
+  color: #FF4B2B;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.clear-button-box > button:hover {
+  text-shadow: 0.3px 0.3px #222;
+}
+
+.clear-button-box button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
